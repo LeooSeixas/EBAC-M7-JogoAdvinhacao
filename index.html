@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo de Advinhação</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <main clas="interface">
+            <section class="game-section">
+                <div class="game">
+                    <h1>JOGO DE ADVINHAÇÃO</h1>
+                    <h3>O jogo funciona da seguinte forma:</h3>
+                    <p>1. Sempre que a página é carregada um número secreto de 0 a 100 é definido;</p>
+                    <p>2. Você precisa advinhar qual é este número indicando na caixa abaixo;</p>
+                    <p>3. Aperte no botão para tentar advinhar se o número indicado é o correto.</p>
+                    <p>Agora, me diga o seu palpite:</p>
+                    <input type="number" id="value" placeholder="50">
+                    <button type="button" onclick="shoot()">Chutar</button>
+                </div>
+                <div class="tips-trys">
+                    <p id="tips">As dicas aparecerá aqui</p>
+                    <p id="result">Resultado aparecerá aqui</p>
+                    <p id="try">Número de tentativas aparecerá aqui</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
