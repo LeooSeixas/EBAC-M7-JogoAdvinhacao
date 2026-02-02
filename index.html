@@ -5,25 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo de Advinhação</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <main clas="interface">
-            <section class="game-section">
+        <main>
+            <section class="interface">
+                <h1>JOGO DE ADIVINHAÇÃO</h1>
                 <div class="game">
-                    <h1>JOGO DE ADVINHAÇÃO</h1>
                     <h3>O jogo funciona da seguinte forma:</h3>
-                    <p>1. Sempre que a página é carregada um número secreto de 0 a 100 é definido;</p>
+                    <p>1. Sempre que a página é carregada um número positivo secreto de 0 a 100 é definido;</p>
                     <p>2. Você precisa advinhar qual é este número indicando na caixa abaixo;</p>
-                    <p>3. Aperte no botão para tentar advinhar se o número indicado é o correto.</p>
+                    <p>3. Aperte no botão "chutar" para palpitar.</p>
                     <p>Agora, me diga o seu palpite:</p>
-                    <input type="number" id="value" placeholder="50">
-                    <button type="button" onclick="shoot()">Chutar</button>
-                </div>
-                <div class="tips-trys">
-                    <p id="tips">As dicas aparecerá aqui</p>
-                    <p id="result">Resultado aparecerá aqui</p>
-                    <p id="try">Número de tentativas aparecerá aqui</p>
+                    <div class="control">
+                        <input type="number" id="value" placeholder="Exemplo: 50">
+                        <button type="button" onclick="shoot()" class="btn">Chutar</button>
+                    </div>
+                    <div class="tips-tries">
+                        <p id="result">O resultado e uma dica aparecerá aqui</p>
+                        <p id="tries">Você tem 10 tentativas para acertar!</p>
+                    </div>
                 </div>
             </section>
         </main>
